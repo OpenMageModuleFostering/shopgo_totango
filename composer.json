@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Shopgo_Totango",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Totango is a module that integrates Magento with Totango tracking service.",
+    "authors": [
+    {
+        "name": "ShopGo",
+        "email": "support@shopgo.me"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
