@@ -1,27 +1,28 @@
 <?xml version="1.0"?>
 <package>
     <name>Shopgo_Totango</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
     <channel>community</channel>
     <extends/>
     <summary>Totango is a module that integrates Magento with Totango tracking service.</summary>
-    <description>&lt;p&gt;Totango module integrates Magento with Totango tracking service.&lt;/p&gt;&#xD;
-&lt;h3&gt;What is Totango?&lt;/h3&gt;&#xD;
-&lt;p&gt;Totango is the leading Customer Engagement platform that helps SaaS companies create an active and engaged user base.&lt;/p&gt;&#xD;
+    <description>&lt;p&gt;Totango is the leading Customer Engagement platform that helps SaaS companies create an active and engaged user base.&lt;/p&gt;&#xD;
 &lt;p&gt;Totango is built on the idea that customer success is all about understanding, measuring, and delivering business value to customers. To do this, Totango&#x2019;s platform is focused on identifying and monitoring &#x201C;leading indicators&#x201D; that help SaaS companies predict at-risk customers and proactively drive positive customer experiences.&lt;/p&gt;&#xD;
 &lt;p&gt;Totango pulls in data from multiple systems to assemble a rich profile of every customer, including a predictive health rating and an &#x201C;engagement score,&#x201D; which is computed based on data science and machine learning.&lt;/p&gt;&#xD;
 &lt;h3&gt;How does it work?&lt;/h3&gt;&#xD;
-&lt;p&gt;Totango module tracks the following activities on Magento and sends tracking data to Totango:&lt;/p&gt;&#xD;
+&lt;p&gt;The module's job is to monitor and track some users' activities on Magento (e.g. Adding Products, Canceling Orders, ...etc.) and sends tracking data to Totango.&lt;/p&gt;&#xD;
+&lt;p&gt;It does not have any front end interface, and all of its work is done in the background without noticing it.&lt;/p&gt;&#xD;
+&lt;h3&gt;Features&lt;/h3&gt;&#xD;
 &lt;ul&gt;&#xD;
-    &lt;li&gt;Track completed and canceled orders.&lt;/li&gt;&#xD;
+    &lt;li&gt;Track complete and canceled orders.&lt;/li&gt;&#xD;
     &lt;li&gt;Track new products.&lt;/li&gt;&#xD;
     &lt;li&gt;Track new categories.&lt;/li&gt;&#xD;
     &lt;li&gt;Track new attributes.&lt;/li&gt;&#xD;
-    &lt;li&gt;Track enabled couriers.&lt;/li&gt;&#xD;
+    &lt;li&gt;Track enabled shipping methods.&lt;/li&gt;&#xD;
     &lt;li&gt;Track enabled payment methods.&lt;/li&gt;&#xD;
     &lt;li&gt;Track successful admin logins.&lt;/li&gt;&#xD;
+    &lt;li&gt;Server/Backend Integration (HTTP API).&lt;/li&gt;&#xD;
 &lt;/ul&gt;&#xD;
 &lt;h3&gt;Dependencies&lt;/h3&gt;&#xD;
 &lt;ul&gt;&#xD;
@@ -30,19 +31,23 @@
 &lt;h3&gt;Notes&lt;/h3&gt;&#xD;
 &lt;ul&gt;&#xD;
     &lt;li&gt;Make sure that all dependencies mentioned above are installed before installing this module. Otherwise, it won't work.&lt;/li&gt;&#xD;
-    &lt;li&gt;More trackers will be added in the future.&lt;/li&gt;&#xD;
+    &lt;li&gt;More trackers could be added in the future.&lt;/li&gt;&#xD;
     &lt;li&gt;You could customize this module and add your own trackers.&lt;/li&gt;&#xD;
     &lt;li&gt;You could use/call this module's helper functions to send tracking calls to Totango.&lt;/li&gt;&#xD;
+    &lt;li&gt;Totango Javascript Collector is currently not supported.&lt;/li&gt;&#xD;
 &lt;/ul&gt;&#xD;
 &lt;p&gt;&lt;strong&gt;You could also get the latest version of this module from:&lt;/strong&gt;&lt;br /&gt;&#xD;
-&lt;a href="https://github.com/shopgo-me/magento-totango-integration"&gt;https://github.com/shopgo-me/magento-totango-integration&lt;/a&gt;&lt;/p&gt;&#xD;
+&lt;a href="https://github.com/shopgo-magento1/magento-totango-integration"&gt;https://github.com/shopgo-magento1/magento-totango-integration&lt;/a&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&lt;strong&gt;For more info about Totango, visit this website:&lt;/strong&gt;&lt;br /&gt;&#xD;
 &lt;a href="http://www.totango.com/"&gt;http://www.totango.com/&lt;/a&gt;&lt;/p&gt;</description>
-    <notes>First release</notes>
+    <notes>&lt;ul&gt;&#xD;
+    &lt;li&gt;Fix some minor issues&lt;/li&gt;&#xD;
+    &lt;li&gt;Add some comments to the code&lt;/li&gt;&#xD;
+&lt;/ul&gt;</notes>
     <authors><author><name>ShopGo</name><user>ShopGo</user><email>support@shopgo.me</email></author></authors>
-    <date>2015-09-17</date>
-    <time>11:53:14</time>
-    <contents><target name="magecommunity"><dir name="Shopgo"><dir name="Totango"><dir name="Helper"><file name="Data.php" hash="a107cbb74469eca6615569909a451987"/></dir><dir name="Model"><file name="Observer.php" hash="ce92c2fe886651c13ec4f2bb6e9d42d3"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Trackersactive.php" hash="7e053d45fd62a4492938dfb006c28c5b"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="067f7c3c9b06c50d95c72e392f6b7325"/><file name="config.xml" hash="3a00c0f23dfdca5ec9af05cb4f94f2bb"/><file name="system.xml" hash="d83a1e7718af2a8ccfda6dd0f4fd1f1c"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Shopgo_Totango.xml" hash="057d7edbb264eebeaabb61ba002338a9"/></dir></target></contents>
+    <date>2015-10-01</date>
+    <time>09:41:50</time>
+    <contents><target name="magecommunity"><dir name="Shopgo"><dir name="Totango"><dir name="Helper"><file name="Data.php" hash="2cc1642ab73fd90e5b77ed1e87667bd4"/></dir><dir name="Model"><file name="Observer.php" hash="003f9eda67ecce9ca3efc160fafcc54c"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Trackersactive.php" hash="7e053d45fd62a4492938dfb006c28c5b"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="067f7c3c9b06c50d95c72e392f6b7325"/><file name="config.xml" hash="501b27695186db8c4edff6a2fb23641d"/><file name="system.xml" hash="d83a1e7718af2a8ccfda6dd0f4fd1f1c"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Shopgo_Totango.xml" hash="057d7edbb264eebeaabb61ba002338a9"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.3.0</min><max>7.0.0</max></php><package><name>Shopgo_Core</name><channel>community</channel><min>1.0.7</min><max/></package></required></dependencies>
 </package>
