@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Shopgo_Totango",
+    "name": "openmage-module-fostering\/shopgo_totango",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Totango is a module that integrates Magento with Totango tracking service.",
     "authors": [
